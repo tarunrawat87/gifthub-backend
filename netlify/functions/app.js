@@ -7,7 +7,7 @@ const app = express();
 const router = app.router();
 router.use(express.static('../functions/netlify/static'));
 
-app.use('/',router)
+app.get('/',router)
 
 const serverless = require('serverless-http')
 
