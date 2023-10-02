@@ -6,11 +6,7 @@ const app = express();
 
 const handler =  async(event, context)=>{
     const router = express.Router();
-    //router.use(express.static('../functions/netlify/static'));
-    router.get('/',(req,res)=>{
-        console.log(' got the request');
-        res.json({ok:1});
-    })
+    router.use(express.static('../functions/netlify/static'));
     
     app.use('/api/',router)
     
