@@ -11,7 +11,7 @@ router.get('/',(req,res)=>{
     res.json({ok:1});
 })
 
-app.get('/api/',router)
+app.use('/api/',router)
 
 const serverless = require('serverless-http')
 
