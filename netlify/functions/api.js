@@ -6,9 +6,9 @@ const app = express();
 
 const handler =  async(event, context)=>{
     const router = express.Router();
-    router.use(express.static('../functions/netlify/static'));
+    //router.use();
     
-    app.use('/',router)
+    app.use(express.static('../functions/netlify/static'));
     
     const serverless = require('serverless-http')
     
