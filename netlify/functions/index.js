@@ -10,7 +10,7 @@ app.use((req,res,next)=>{
     console.log(req.path)
  next();   
 })
-app.get('/',router)
+app.get('/index',router)
 
 const serverless = require('serverless-http')
 
