@@ -5,12 +5,13 @@ const express = require('express')
 const app = express();
 
 const router = express.Router();
-router.use(express.static('../functions/netlify/static'));
-app.use((req,res,next)=>{
-    console.log(req.path)
- next();   
+//router.use(express.static('../functions/netlify/static'));
+router.get('/',(req,res)=>{
+    console.log(' got the request');
+    res.json({ok:1});
 })
-app.get('/index',router)
+
+app.get('/api/',router)
 
 const serverless = require('serverless-http')
 
