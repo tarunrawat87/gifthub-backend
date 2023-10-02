@@ -16,7 +16,7 @@ const handler =  async(event, context)=>{
     
     const serverless = require('serverless-http')
     
-    return serverless(api)(event, context)    
+    return serverless(app)(event, context)    
 }
 
 module.exports = {
