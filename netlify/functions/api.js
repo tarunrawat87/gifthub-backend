@@ -15,6 +15,7 @@ const handler =  async(event, context)=>{
 
     app.get('/',(req,res)=>{
         let testFolder = path.join(__dirname,"../../");
+        console.log("tes folder",testFolder)
         fs.readdirSync(testFolder).forEach(file => {
         console.log(file);
         });
