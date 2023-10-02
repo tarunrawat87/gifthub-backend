@@ -10,8 +10,16 @@ const handler =  async(event, context)=>{
     //router.use();
     
   // app.use(express.static('./static'));
+
+  const fs = require('fs');
+
     app.get('/',(req,res)=>{
+        let testFolder = path.join(__dirname,"../../");
+        fs.readdirSync(testFolder).forEach(file => {
+        console.log(file);
+        });
         res.sendFile(path.join(__dirname,"../../static/index.html"));
+
     })
     const serverless = require('serverless-http')
     
