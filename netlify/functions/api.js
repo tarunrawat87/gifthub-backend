@@ -3,6 +3,7 @@
 const express = require('express')
 
 const app = express();
+const path = require('path');
 
 const handler =  async(event, context)=>{
     const router = express.Router();
@@ -11,7 +12,8 @@ const handler =  async(event, context)=>{
    app.use(express.static('../functions/netlify/static'));
     app.get('/',(req,res)=>{
         console.log('request serverd');
-        res.sendFile("index.html")
+        console.log(path.join(__dirname,"../functions/netlify/static"));
+        res.sendFile(path.join(__dirname,"../functions/netlify/static"))
     })
     const serverless = require('serverless-http')
     
