@@ -12,8 +12,8 @@ const handler =  async(event, context)=>{
    app.use(express.static('./static'));
     app.get('/',(req,res)=>{
         console.log('request serverd',__dirname);
-        console.log(path.join(__dirname,"../../staic"));
-        res.sendFile("./static/index.html");
+        console.log(path.join(__dirname,"../../static"));
+        res.sendFile(path.join(__dirname,"static/index.html"));
     })
     const serverless = require('serverless-http')
     
