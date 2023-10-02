@@ -37,7 +37,7 @@ const handler =  async(event, context)=>{
         </body>
         
         </html>`
-        res.send(str);
+        res.json({ok:1});
     });
 
     
