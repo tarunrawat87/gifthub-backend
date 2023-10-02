@@ -1,17 +1,16 @@
 {
   "files": {
-    "main.css": "https://cdn.jsdelivr.net/gh/tarunrawat87/gifthub-backend/static/static/css/main.246749cb.css",
-    "main.js": "https://cdn.jsdelivr.net/gh/tarunrawat87/gifthub-backend/static/static/js/main.312b070c.js",
-    "static/js/787.00121509.chunk.js": "https://cdn.jsdelivr.net/gh/tarunrawat87/gifthub-backend/static/static/js/787.00121509.chunk.js",
-    "static/media/Sacramento-Regular.ttf": "https://cdn.jsdelivr.net/gh/tarunrawat87/gifthub-backend/static/static/media/Sacramento-Regular.5bd7d5208f7a9c18fe22.ttf",
-    "static/media/logo.svg": "https://cdn.jsdelivr.net/gh/tarunrawat87/gifthub-backend/static/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/static/css/main.34351f65.css",
+    "main.js": "/static/js/main.c8ac5fe6.js",
+    "static/js/787.00121509.chunk.js": "/static/js/787.00121509.chunk.js",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
-    "main.246749cb.css.map": "https://cdn.jsdelivr.net/gh/tarunrawat87/gifthub-backend/static/static/css/main.246749cb.css.map",
-    "main.312b070c.js.map": "https://cdn.jsdelivr.net/gh/tarunrawat87/gifthub-backend/static/static/js/main.312b070c.js.map",
-    "787.00121509.chunk.js.map": "https://cdn.jsdelivr.net/gh/tarunrawat87/gifthub-backend/static/static/js/787.00121509.chunk.js.map"
+    "main.34351f65.css.map": "/static/css/main.34351f65.css.map",
+    "main.c8ac5fe6.js.map": "/static/js/main.c8ac5fe6.js.map",
+    "787.00121509.chunk.js.map": "/static/js/787.00121509.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.246749cb.css",
-    "static/js/main.312b070c.js"
+    "static/css/main.34351f65.css",
+    "static/js/main.c8ac5fe6.js"
   ]
 }
