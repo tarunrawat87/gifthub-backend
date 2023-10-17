@@ -10,8 +10,8 @@ const handler =  async(event, context)=>{
     //router.use();
     
   // app.use(express.static('./static'));
-    const cssHash = "34351f65";
-    const jsHash = "c8ac5fe6";
+    const cssHash = "5added3e";
+    const jsHash = "e57b1c2c";
 
     app.get('/',(req,res)=>{
         res.setHeader("Content-Type", "text/html");
