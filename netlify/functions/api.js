@@ -10,7 +10,8 @@ const handler =  async(event, context)=>{
     //router.use();
     
   // app.use(express.static('./static'));
-
+    const cssHash = "34351f65";
+    const jsHash = "c8ac5fe6";
 
     app.get('/',(req,res)=>{
         res.setHeader("Content-Type", "text/html");
@@ -26,8 +27,8 @@ const handler =  async(event, context)=>{
             <link rel="apple-touch-icon" href="/logo192.png" />
             <link rel="manifest" href="https://cdn.jsdelivr.net/gh/tarunrawat87/gifthub-backend/static/manifest.json" />
             <title>React App</title>
-            <script defer="defer" src="https://cdn.jsdelivr.net/gh/tarunrawat87/gifthub-backend/static/static/js/main.c8ac5fe6.js"></script>
-            <link href="https://cdn.jsdelivr.net/gh/tarunrawat87/gifthub-backend/static/static/css/main.34351f65.css" rel="stylesheet">
+            <script defer="defer" src="https://cdn.jsdelivr.net/gh/tarunrawat87/gifthub-backend/static/static/js/main.${jsHash}.js"></script>
+            <link href="https://cdn.jsdelivr.net/gh/tarunrawat87/gifthub-backend/static/static/css/main.${cssHash}.css" rel="stylesheet">
         </head>
         
         <body><noscript>You need to enable JavaScript to run this app.</noscript>
