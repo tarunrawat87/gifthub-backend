@@ -12,6 +12,8 @@ const handler =  async(event, context)=>{
   // app.use(express.static('./static'));
     const cssHash = "5added3e";
     const jsHash     = "e57b1c2c";
+    const title = "Gifthub 01"
+
     const handler = (req,res)=>{
         res.setHeader("Content-Type", "text/html");
         let str =`<!doctype html>
@@ -25,7 +27,7 @@ const handler =  async(event, context)=>{
             <meta name="description" content="One Place for All your Gifts.." />
             <link rel="apple-touch-icon" href="/logo192.png" />
             <link rel="manifest" href="https://cdn.jsdelivr.net/gh/tarunrawat87/gifthub-backend/static/manifest.json" />
-            <title>React App</title>
+            <title>${title}</title>
             <script defer="defer" src="https://cdn.jsdelivr.net/gh/tarunrawat87/gifthub-backend/static/static/js/main.${jsHash}.js"></script>
             <link href="https://cdn.jsdelivr.net/gh/tarunrawat87/gifthub-backend/static/static/css/main.${cssHash}.css" rel="stylesheet">
         </head>
