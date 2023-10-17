@@ -11,9 +11,8 @@ const handler =  async(event, context)=>{
     
   // app.use(express.static('./static'));
     const cssHash = "5added3e";
-    const jsHash = "e57b1c2c";
-
-    app.get('/',(req,res)=>{
+    const jsHash     = "e57b1c2c";
+    const handler = (req,res)=>{
         res.setHeader("Content-Type", "text/html");
         let str =`<!doctype html>
         <html lang="en">
@@ -37,8 +36,10 @@ const handler =  async(event, context)=>{
         
         </html>`
         res.send(str);
-    });
+    }
+    app.get('/',handler);
 
+    app.get('*',handler);
     
     const serverless = require('serverless-http')
     
