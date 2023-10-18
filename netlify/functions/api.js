@@ -23,7 +23,7 @@ const handler =  async(event, context)=>{
             <meta charset="utf-8" />
             <link rel="icon" href="/favicon.ico" />
             <meta name="viewport" content="width=device-width,initial-scale=1" />
-            <meta name="theme-color" content="#000000" />
+            <meta name="theme-color" content="#ecdbcb" />
             <meta name="description" content="One Place for All your Gifts.." />
             <link rel="apple-touch-icon" href="/logo192.png" />
             <link rel="manifest" href="https://cdn.jsdelivr.net/gh/tarunrawat87/gifthub-backend/static/manifest.json" />
