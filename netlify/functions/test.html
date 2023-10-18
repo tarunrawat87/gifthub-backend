@@ -1,0 +1,53 @@
+<!-- <script src="https://www.paypal.com/sdk/js?client-id=AbIyNpmQ_mEOKhHQwx9dSPde8a650Ji3GNQYUbfTXH-9GPsi1jdvoHgKfSBitpIRsYTxJuigO4FbFror&components=auth-button"></script>  SANDBOX -->
+
+<!-- <script src="https://www.msmaster.qa.paypal.com/sdk/js?client-id=B_AahUVgctJyj3FFucc1PnTWvypBUiv0oMXDieB3xtCX_j2ViN2a3imGr4BvXzSsaxzznKPDrUrp5z1Yjs&components=auth-button"></script>  SANDBOX -->
+<script src="https://www.paypal.com/sdk/js?client-id=AZ5h41LBEdeTmJr3c0nto-i0XtKWmMlGx-beWakW0ea4pelznjADTcRnviGeq0uS8-pNPcx4mPJG6nbx&components=auth-button" type="text/javascript"></script>
+
+
+<!-- <script src="https://www.paypal.com/sdk/js?client-id=AaN9561avvr7jHK1dC6WDJPfAYwsVQT66LRKVePbmQKErF8BfPgHJOr1knuXmhMvt1Cf02KSCJi8mQV6&components=auth-button"></script> --> <!--Production - App: Paresh K Kadam-->
+<html>
+<body>
+<!-- Set up a container element for the button -->
+<div id="my_paypal_login_button"></div>
+<div id="my_paypal_login_button" style="width: 100px;"></div>
+<script>
+// Render the PayPal button into #my_paypal_login_button
+
+//3c4826ccdfd83
+//9008c16c61ac2
+
+
+paypal.AuthButton(
+{
+      // List of scopes you want the user to share with you
+      scopes: ["openid", "email", "address"],
+      // Set responseType if needed for your integration
+      responseType: 'code',
+      returnurl:'https://www.google.com',
+      billingAgreement: true,
+      // Set the style of your button
+      style: {
+              label: 'connnect', // connect, signup, continue
+              color: 'silver', // silver, blue
+              height: 50, // 35 to 50
+              shape: 'rect' // rect, pill
+      },
+      //Finalize the log in with PayPal flow
+      onApprove:function (data) {
+            var authCode = data.authCode; // Get the authorization code
+            console.log(authCode);
+            var idToken = data.idToken; // Get the id token (in case responseType set to id_token)
+            console.log(idToken);
+
+      },
+      onCancel: function (data, actions) {
+      console.log("data cancel");
+      alert('User did not consent');
+       console.log("data cancel");
+    // Show a cancel page or return to cart
+    },
+}
+).render('#my_paypal_login_button');
+</script>
+</body>
+</html>
