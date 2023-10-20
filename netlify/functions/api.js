@@ -4,6 +4,7 @@ const express = require('express')
 
 const app = express();
 const path = require('path');
+const config = require('./config')
 
 const handler =  async(event, context)=>{
     const router = express.Router();
@@ -13,7 +14,7 @@ const handler =  async(event, context)=>{
     const cssHash = "5added3e";
     const jsHash     = "6f564976";
     const title = "Gifthub 01"
-
+    console.log(config)
     const handler = (req,res)=>{
         res.setHeader("Content-Type", "text/html");
         let str =`<!doctype html>
