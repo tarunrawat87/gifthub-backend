@@ -11,9 +11,9 @@ const handler =  async(event, context)=>{
     //router.use();
     
   // app.use(express.static('./static'));
- 
-    const cssHash = "4e6b2003";
-    const jsHash     = "4087a39f";
+  
+    const cssHash = "9375817e";
+    const jsHash     = "6b7a8c67";
     const title = "Gifthub 01"
     console.log(config)
     const handler = (req,res)=>{
